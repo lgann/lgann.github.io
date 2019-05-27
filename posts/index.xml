@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>LGANN&#39;s Blog Website</title>
-    <link>https://lgann.github.io/</link>
-    <description>Recent content on LGANN&#39;s Blog Website</description>
+    <title>Posts on LGANN&#39;s Blog Website</title>
+    <link>https://lgann.github.io/posts/</link>
+    <description>Recent content in Posts on LGANN&#39;s Blog Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 27 May 2019 23:35:11 +0800</lastBuildDate>
     
-	<atom:link href="https://lgann.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://lgann.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://lgann.github.io/posts/build-hugo-github/</guid>
       <description>Build a github.io website by Hugo and Deployed to Netlify. Hugo Local setup hugo new site lgann-website cd lgann-website git init git submodule add https://github.com/zwbetz-gh/cayman-hugo-theme themes/cayman hugo new post/first.md hugo new posts/build-hugo-github.md config.toml baseURL = &amp;quot;https://lgann.github.io/&amp;quot; languageCode = &amp;quot;zh-CN&amp;quot; #languageCode = &amp;quot;en-us&amp;quot; title = &amp;quot;LGANN&#39;s Blog Website&amp;quot; theme = &amp;quot;cayman&amp;quot; defaultContentLanguage = &amp;quot;zh-CN&amp;quot; hasCJKLanguage = true # Google analytics # OBgoogleAnalytics = &amp;quot;UA-123456789-1&amp;quot; # Disqus comments #disqusShortname = &amp;quot;yourdiscussshortname&amp;quot; #</description>
-    </item>
-    
-    <item>
-      <title>First</title>
-      <link>https://lgann.github.io/first/</link>
-      <pubDate>Mon, 27 May 2019 23:24:58 +0800</pubDate>
-      
-      <guid>https://lgann.github.io/first/</guid>
-      <description>First Post of HUGO 中文如何呢 hello world</description>
     </item>
     
   </channel>
