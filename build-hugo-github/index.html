@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Hugo 0.55.6" />
+  <link rel="stylesheet" href="https://lgann.github.io/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  
+  
+  
+  <link rel="stylesheet" href="https://lgann.github.io/css/cayman.87415a4997c8d6c666624ff26c8812f27f42b4cf5dc18c45fc8dcb0cd7d6d2f5.css">
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css" integrity="sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js" integrity="sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+  <title>Build Hugo Github | LGANN&#39;s Blog Website</title>
+</head>
+
+<body>
+  <section class="page-header">
+  <h1 class="project-name">
+    LGANN Blog
+  </h1>
+  <h2 class="project-tagline">
+    New Start
+  </h2>
+  <nav>
+    
+    
+      
+      
+      
+      
+      <a href="/" class="btn">Blog</a>
+    
+      
+      
+      
+      
+      <a href="/tags/" class="btn">Tags</a>
+    
+      
+      
+      
+      
+      <a href="/about/" class="btn">About</a>
+    
+      
+      
+      
+      
+      <a href="/index.xml" class="btn">RSS</a>
+    
+  </nav>
+</section>
+
+  <section class="main-content">
+    
+  <h1>Build Hugo Github</h1>
+  <div>
+    
+    <strong>Publish date: </strong>2019-05-27
+  </div>
+  
+  
+  
+
+<h1 id="build-a-github-io-website-by-hugo-and-deployed-to-netlify">Build a github.io website by Hugo and Deployed to Netlify.</h1>
+
+<h2 id="hugo-local-setup">Hugo Local setup</h2>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site lgann-website
+<span style="color:#008000">cd</span> lgann-website
+git init
+git submodule add  https://github.com/zwbetz-gh/cayman-hugo-theme themes/cayman
+hugo new post/first.md
+hugo new posts/build-hugo-github.md</code></pre></div>
+<p>config.toml</p>
+
+<pre><code>baseURL = &quot;https://lgann.github.io/&quot;
+languageCode = &quot;zh-CN&quot;
+#languageCode = &quot;en-us&quot;
+title = &quot;LGANN's Blog Website&quot;
+theme = &quot;cayman&quot;
+defaultContentLanguage =      &quot;zh-CN&quot;
+hasCJKLanguage =             true 
+
+# Google analytics
+# OBgoogleAnalytics = &quot;UA-123456789-1&quot;
+
+# Disqus comments
+#disqusShortname = &quot;yourdiscussshortname&quot;
+
+# Syntax highlighting
+pygmentsCodefences = true
+pygmentsStyle = &quot;pygments&quot;
+
+[taxonomies]
+  tag = &quot;tags&quot;
+
+[permalinks]
+  post = &quot;/:filename/&quot;
+
+[params]
+
+  author = &quot;Louis Gan&quot;
+  github = &quot;lgann&quot;
+
+  # Header text, can be markdown
+  project_name = &quot;LGANN Blog&quot;
+  project_tagline = &quot;New Start&quot;
+
+  # Date format for post list and single pages
+  # For more date formats see https://gohugo.io/functions/format/
+  dateFormat = &quot;2006-01-02&quot;
+
+  # Footer text, can be markdown
+  footer = &quot;Made with [Hugo](https://gohugo.io/). Themed by [Cayman](https://github.com/zwbetz-gh/cayman-hugo-theme). Deployed to [Netlify](https://www.netlify.com/).&quot;
+
+  # If true, the CSS/JS for Katex math typesetting are enabled
+  katex = true
+
+  # Breakpoints
+  large_breakpoint = &quot;64em&quot;
+  medium_breakpoint = &quot;42em&quot;
+
+  # Header colors
+  header_heading_color = &quot;#fff&quot;
+  header_background_color = &quot;#159957&quot;
+  header_background_color_secondary = &quot;#155799&quot;
+
+  # Text colors
+  section_headings_color = &quot;#159957&quot;
+  body_text_color = &quot;#606c71&quot;
+  body_link_color = &quot;#1e6bb8&quot;
+  blockquote_text_color = &quot;#819198&quot;
+
+  # Code colors
+  code_background_color = &quot;#f3f6fa&quot;
+  code_text_color = &quot;#567482&quot;
+
+  # Border colors
+  border_color = &quot;#dce6f0&quot;
+  table_border_color = &quot;#e9ebec&quot;
+  hr_border_color = &quot;#eff0f1&quot;
+
+[menu]
+  [[menu.nav]]
+    name = &quot;Blog&quot;
+    url = &quot;/&quot;
+    weight = 1
+  [[menu.nav]]
+    name = &quot;Tags&quot;
+    url = &quot;/tags/&quot;
+    weight = 2
+  [[menu.nav]]
+    name = &quot;About&quot;
+    url = &quot;/about/&quot;
+    weight = 3
+  [[menu.nav]]
+    name = &quot;RSS&quot;
+    url = &quot;/index.xml&quot;
+    weight = 4
+
+</code></pre>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server -D
+<span style="color:#408080;font-style:italic">#visit http://http://localhost:1313 to test the website</span></code></pre></div>
+<h2 id="deployed-to-github">Deployed to GIthub</h2>
+
+<p>create lgann-website-hugo repo at github</p>
+
+<p>create lgann.github.io repo at githu</p>
+
+<pre><code>hugo
+cd public
+git init
+git config core.sshCommand &quot;ssh -i ~/.ssh/id_rsa_lgann -F /dev/null&quot;
+git remote add origin git@github.com:lgann/lgann.github.io.git
+git add .
+git commit -m &quot;Initial commit&quot;
+git push -u origin master
+</code></pre>
+
+<pre><code>pwd
+/c/dev/lgann-website
+git config core.sshCommand &quot;ssh -i ~/.ssh/id_rsa_lgann -F /dev/null&quot;
+git remote add origin git@github.com:lgann/lgann-website-hugo.git
+git add .
+git commit -m &quot;Initial commit&quot;
+git push -u origin master
+</code></pre>
+
+<h2 id="deployed-to-netlify">Deployed To netlify</h2>
+
+<h2 id="reference">Reference</h2>
+
+<p><a href="https://medium.com/@chs_wei/在-github-部署-hugo-靜態網站-9c40682dfe40">在 GitHub 部署 Hugo 靜態網站</a></p>
+
+<p><a href="https://blog.olowolo.com/post/hugo-quick-start/">Hugo 从入门到会用</a></p>
+
+<p><a href="https://www.netlify.com/blog/2016/09/21/a-step-by-step-guide-victor-hugo-on-netlify/#now-let-s-add-a-new-post">A Step-by-Step Guide: Victor-Hugo on Netlify</a></p>
+
+  
+
+
+
+    <footer class="site-footer">
+  <span class="site-footer-credits">
+    Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/zwbetz-gh/cayman-hugo-theme">Cayman</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>.
+  </span>
+</footer>
+
+  </section>
+  
+  
+
+</body>
+</html>

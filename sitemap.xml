@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://lgann.github.io/posts/build-hugo-github/</loc>
+    <loc>https://lgann.github.io/build-hugo-github/</loc>
     <lastmod>2019-05-27T23:35:11+08:00</lastmod>
   </url>
   
@@ -14,7 +14,7 @@
   </url>
   
   <url>
-    <loc>https://lgann.github.io/posts/</loc>
+    <loc>https://lgann.github.io/post/</loc>
     <lastmod>2019-05-27T23:35:11+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -22,12 +22,6 @@
   <url>
     <loc>https://lgann.github.io/first/</loc>
     <lastmod>2019-05-27T23:24:58+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lgann.github.io/post/</loc>
-    <lastmod>2019-05-27T23:24:58+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

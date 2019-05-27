@@ -13,10 +13,10 @@
     
     <item>
       <title>Build Hugo Github</title>
-      <link>https://lgann.github.io/posts/build-hugo-github/</link>
+      <link>https://lgann.github.io/build-hugo-github/</link>
       <pubDate>Mon, 27 May 2019 23:35:11 +0800</pubDate>
       
-      <guid>https://lgann.github.io/posts/build-hugo-github/</guid>
+      <guid>https://lgann.github.io/build-hugo-github/</guid>
       <description>Build a github.io website by Hugo and Deployed to Netlify. Hugo Local setup hugo new site lgann-website cd lgann-website git init git submodule add https://github.com/zwbetz-gh/cayman-hugo-theme themes/cayman hugo new post/first.md hugo new posts/build-hugo-github.md config.toml baseURL = &amp;quot;https://lgann.github.io/&amp;quot; languageCode = &amp;quot;zh-CN&amp;quot; #languageCode = &amp;quot;en-us&amp;quot; title = &amp;quot;LGANN&#39;s Blog Website&amp;quot; theme = &amp;quot;cayman&amp;quot; defaultContentLanguage = &amp;quot;zh-CN&amp;quot; hasCJKLanguage = true # Google analytics # OBgoogleAnalytics = &amp;quot;UA-123456789-1&amp;quot; # Disqus comments #disqusShortname = &amp;quot;yourdiscussshortname&amp;quot; #</description>
     </item>
     
